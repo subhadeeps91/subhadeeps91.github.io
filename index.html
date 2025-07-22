@@ -62,13 +62,19 @@
   </nav>
 
   <!-- Header Section with Profile -->
-<header class="container-fluid bg-white py-5 d-flex align-items-center" style="position: relative;">
-  <div class="profile-pic" style="margin-left: 3rem; z-index: 1;">
-    <img src="profile.jpg" alt="Profile Picture" style="width: 180px; height: 240px; object-fit: cover; border: 4px solid #f8f9fa; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  </div>
-  <div class="container ps-5">
-    <h1 class="display-3 fw-bold">Subhadeep Sarkar</h1>
-    <p class="lead fs-4">Data Test Engineer | Test Analyst | QA Analyst | Softwaretester | ISTQB Certified | SQL | Python | API/ Postman | Manual & Automation | JIRA, Jenkins, Bitbucket</p>
+<header class="container-fluid position-relative p-0" style="height: 320px;">
+  <!-- Cover Image -->
+  <img src="cover.jpg" alt="Cover Image" class="img-fluid w-100 h-100" style="object-fit: cover;">
+
+  <!-- Overlay for Profile & Intro -->
+  <div class="position-absolute top-50 start-0 translate-middle-y d-flex align-items-center px-4" style="width: 100%;">
+    <div class="profile-pic me-4">
+      <img src="Profile.jpg" alt="Profile Picture" style="width: 190px; height: 190px; object-fit: cover; border: 3px solid white; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+    </div>
+    <div class="text-white">
+      <h1 class="fw-bold">Subhadeep Sarkar</h1>
+      <p class="lead">Data Test Engineer | Test Analyst | QA Analyst | Softwaretester | ISTQB Certified | SQL | Python | API/ Postman | Manual & Automation | JIRA, Jenkins, Bitbucket</p>
+    </div>
   </div>
 </header>
 
@@ -76,7 +82,7 @@
     <!-- Experience -->
     <section id="experience">
   <h2 class="section-title">Work Experience</h2>
-  <img src="images/work experience.jpg" alt="Work Experience" class="img-fluid mb-3" style="max-height: 180px;">
+  <img src="Images/Work Experience.jpg" alt="Work Experience" class="img-fluid mb-3" style="max-height: 180px;">
   <ul>
     <li><strong>New Yorker - Braunschweig, Germany</strong> – Test Engineer (Nov-2024–Mar-2025)</li>
     <li><strong>Accenture - Pune, India</strong> – Senior Analyst (Jan-2018–Mar-2021)</li>
@@ -87,7 +93,7 @@
     <!-- Projects -->
 <section id="projects">
   <h2 class="section-title">Projects</h2>
-  <img src="images/projects.jpg" alt="Projects" class="img-fluid mb-3" style="max-height: 180px;">
+  <img src="Images/Project.jpg" alt="Projects" class="img-fluid mb-3" style="max-height: 180px;">
   <div class="row">
     <div class="col-md-6 mb-3">
       <div class="card">
@@ -144,7 +150,7 @@
 <!-- Education -->
 <section id="Education">
     <h2 class="Education">Education</h2>
-	<img src="images/Education.jpg" alt="Education" class="img-fluid mb-3" style="max-height: 180px;">
+	<img src="Images/education.jpg" alt="Education" class="img-fluid mb-3" style="max-height: 180px;">
     <ul>
       <li>Masters in Management (Mar-2021 - Jun 2023): University of Europe for Applied Sciences, Berlin; Final Grade: 89.91%</li>
       <li>BTech in Instrumentation & Control Engineering (Jul-2010 - Jun-2014): West bengal University of Technology; Final Grade: 7.17</li>
@@ -154,7 +160,7 @@
 <!-- Awards & Certificates -->
 <section id="Awards & Certificates">
     <h2 class="Awards & Certificates">Awards & Certificates</h2>
-	<img src="images/Awards.jpg" alt="Awards & Certificates" class="img-fluid mb-3" style="max-height: 180px;">
+	<img src="Images/awards.jpg" alt="Awards & Certificates" class="img-fluid mb-3" style="max-height: 180px;">
     <ul>
       <li>ISTQB® Certified Tester - Foundation Level 4.0</li>
       <li>Accenture Centre of Excellence - ACE Award(2019)</li>
@@ -165,10 +171,10 @@
     <!-- Tools & Skills with Icons -->
 <section id="skills">
   <h2 class="section-title">Tools & Skills</h2>
-  <img src="images/Skills.jpg" alt="Tools & Skills" class="img-fluid mb-3" style="max-height: 180px;">
+  <img src="Images/Skills.jpg" alt="Tools & Skills" class="img-fluid mb-3" style="max-height: 180px;">
 
   <div class="border p-3 mb-4 bg-light rounded">
-    <h5><img src="images/Tech Stack.jpg" alt="Tech Stack" width="24" height="24" class="me-2"> Tech Stack</h5>
+    <h5><img src="Images/Tech Stack.jpg" alt="Tech Stack" width="24" height="24" class="me-2"> Tech Stack</h5>
     <div class="d-flex flex-wrap align-items-center text-center">
       <div class="me-4 mb-3">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="40" height="40">
@@ -193,7 +199,7 @@
   </div>
 
   <div class="border p-3 mb-4 bg-light rounded">
-    <h5><img src="images/Tools.jpg" alt="Tools" width="24" height="24" class="me-2"> Tools</h5>
+    <h5><img src="Images/Tools.jpg" alt="Tools" width="24" height="24" class="me-2"> Tools</h5>
     <div class="d-flex flex-wrap align-items-center text-center">
       <div class="me-4 mb-3">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="40" height="40">
@@ -224,7 +230,7 @@
   </div>
 
   <div class="border p-3 mb-4 bg-light rounded">
-    <h5><img src="images/Process.jpg" alt="Process" width="24" height="24" class="me-2"> Process</h5>
+    <h5><img src="Images/Process.jpg" alt="Process" width="24" height="24" class="me-2"> Process</h5>
     <ul class="mb-0">
       <li>ETL Testing</li>
       <li>Data Warehousing</li>
@@ -234,7 +240,7 @@
   </div>
 
   <div class="border p-3 mb-4 bg-light rounded">
-    <h5><img src="images/Methods.jpg" alt="Methods" width="24" height="24" class="me-2"> Methods</h5>
+    <h5><img src="Images/Methods.jpg" alt="Methods" width="24" height="24" class="me-2"> Methods</h5>
     <ul class="mb-0">
       <li>Agile Methodologies (Scrum, KANBAN)</li>
       <li>Waterfall</li>
@@ -246,16 +252,16 @@
     <!-- Voluntary Work -->
     <section>
       <h2 class="section-title">Voluntary Work</h2>
-	  <img src="images/Voluntary Work.jpg" alt="Work Experience" class="img-fluid mb-3" style="max-height: 180px;">
-      <p>Ignite e.V., Berlin: Event Manager & Community coordinator (2022 - Till Date) - Organization and moderation of over 10 major events for the Indian community in Berlin. Social media strategies through Data Analysis to increase reach. Creation of promotional materials using(Canva, videos), and establishment and coordination of a team of volunteers to ensure successful event execution.</p>
-	<p>Special Olympics National Games, Berlin : Transport coordination  (Jun - 2022) - Organization of transport for athletes between competition venues under high responsibility</p>
-	<p>SCC Events GmbH – Berlin Marathon: Track marshals & event logistics (Sept 2022) - Responsibility for route security and coordination of the area at the 13-14km mark point at the Berlin Marathon.</p>
+	  <img src="Images/voluntary work.jpg" alt="Work Experience" class="img-fluid mb-3" style="max-height: 180px;">
+      <p>* Ignite e.V., Berlin: Event Manager & Community coordinator (2022 - Till Date) - Organization and moderation of over 10 major events for the Indian community in Berlin. Social media strategies through Data Analysis to increase reach. Creation of promotional materials using(Canva, videos), and establishment and coordination of a team of volunteers to ensure successful event execution.</p>
+	<p>* Special Olympics National Games, Berlin : Transport coordination  (Jun - 2022) - Organization of transport for athletes between competition venues under high responsibility</p>
+	<p>* SCC Events GmbH – Berlin Marathon: Track marshals & event logistics (Sept 2022) - Responsibility for route security and coordination of the area at the 13-14km mark point at the Berlin Marathon.</p>
     </section>
 
     <!-- Hobbies -->
     <section>
       <h2 class="section-title">Hobbies</h2>
-	  <img src="images/Hobbies.jpg" alt="Hobbies" class="img-fluid mb-3" style="max-height: 180px;">
+	  <img src="Images/hobbies.jpg" alt="Hobbies" class="img-fluid mb-3" style="max-height: 180px;">
       <ul>
         <li>Football & Sports Analysis</li>
         <li>Data Visualization with Python</li>
@@ -266,7 +272,7 @@
     <!-- Contact -->
     <section id="contact">
       <h2 class="section-title">Contact</h2>
-	  <img src="image/Contact.jpg" alt="Contact" class="img-fluid mb-3" style="max-height: 180px;">
+	  <img src="Images/contact.jpg" alt="Contact" class="img-fluid mb-3" style="max-height: 180px;">
       <p><strong>Email:</strong> subhadeeps91@gmail.com</p>
       <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/subhadeep-sarkar-514a51a7" target="_blank">subhadeep-sarkar-514a51a7</a></p>
       <p><strong>GitHub:</strong> <a href="https://github.com/subhadeeps91" target="_blank">subhadeeps91</a></p>
