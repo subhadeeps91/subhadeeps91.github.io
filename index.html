@@ -2,162 +2,199 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Portfolio</title>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WN2XQZBH');</script>
-<!-- End Google Tag Manager -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Abadi&display=swap');
 
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  <!-- End Google Tag Manager -->
+
+  <style>
     body {
-      font-family: 'Abadi', Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #eef2f5;
-    }
-    header {
-      background-color: #004080;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      background-image: url('cover.jpg');
-      background-size: cover;
-      background-position: center;
-      position: relative;
-    }
-    .overlay {
-      background: rgba(0.3, 0.2, 0.2, 0.6);
-      padding: 20px;
-      border-radius: 10px;
-      display: inline-block;
+      background-color: #eef2f5;
+      font-family: Arial, sans-serif;
     }
     .profile-pic {
-      width: 130px;
-      height: 130px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid white;
       margin-top: 15px;
     }
-    section {
-      padding: 20px;
-    }
-    h2 {
+    .section-title {
       color: #004080;
-    }
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
-    }
-    a {
-      color: #004080;
-      text-decoration: none;
-    }
-    .project {
-      background: #fff;
-      margin-bottom: 15px;
-      padding: 10px;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WN2XQZBH"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-  <header>
-    <div class="overlay">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+		  <li class="nav-item"><a class="nav-link" href="#experience">Education</a></li>
+		  <li class="nav-item"><a class="nav-link" href="#experience">Awards & Certificates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-dark text-white text-center py-5" style="background-image: url('cover.jpg'); background-size: cover; background-position: center;">
+    <div class="container">
       <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-      <h1>Subhadeep Sarkar</h1>
+      <h1 class="mt-3">Subhadeep Sarkar</h1>
       <p>Data Test Engineer | Test Analyst | QA Analyst | Softwaretester | ISTQB Certified | SQL | Python | API/ Postman | Manual & Automation | JIRA, Jenkins, Bitbucket</p>
     </div>
   </header>
 
-  <section>
-    <h2>Work Experience</h2>
-    <ul>
-      <li><strong>New Yorker - Braunschweig, Germany</strong> – Test Engineer (Nov-2024–Mar-2025)</li>
-      <li><strong>Accenture - Pune, India</strong> – Test Engineer  Senior Analyst(Jan-2018–Mar-2021)</li>
-      <li><strong>Accenture - Chennai, India</strong> – Test Engineer Analyst (Oct-2014-Jan-2018)</li>
-    </ul>
-  </section>
+  <main class="container py-4">
+    <!-- Experience -->
+    <section id="experience">
+      <h2 class="section-title">Work Experience</h2>
+      <ul>
+        <li><strong>New Yorker - Braunschweig, Germany</strong> – Test Engineer (Nov-2024–Mar-2025)</li>
+		<li><strong>Accenture - Pune, India</strong> – Test Engineer  Senior Analyst(Jan-2018–Mar-2021)</li>
+		<li><strong>Accenture - Chennai, India</strong> – Test Engineer Analyst (Oct-2014-Jan-2018)</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>UK Banking QA & Automation</h3>
-      <p>Banking ETL project using Teradata and SQL to flag defaulters. Automated regression pipelines; reduced defect rate by 25% and shortened release cycles by 30%. Enabled seamless Data Warehouse & API testing via Fitnesse & Postman</p>
+    <!-- Projects -->
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">UK Banking QA & Automation</h5>
+          <ul>
+            <li>Automation using Python Based SQL regression test suites for regulatory banking pipelines integrated in CI/CD pipeline</li>
+            <li>Planning and execution of manual test cases based on detailed functional specs across FATCA, Default Calculation Logic(DCE), and liquidity logic</li>
+            <li>Improve release quality by reducing defect rate by 25% and test duration by 30%. Supporting QA culture growth through report generation using Power BI, peer reviews and knowledge sharing</li>
+          </ul>
+          </div>
       </div>
-    <div class="project">
-      <h3>US Healthcare Insurance Data QA</h3>
-      <p>Tested insurance claim flows mapped to services & events using SQL pipelines. Boosted QA cycle efficiency by 18%. Delivered zero-defect releases over 3 cycles.</p>
-      </div>
-	<div class="project">
-      <h3>ERP-Supply Chain Logistics </h3>
-      <p>Validated cross-system UI workflows; paired with design teams using basic Cypress for interface testing</p>
-      </div>
-	<div class="project">
-      <h3>Wedding DWH</h3>
-      <p>Created DWH to store Wedding related data in a database created on the MS SQL platform for reporting purpose using Power BI</p>
-      <a href="https://github.com/yourusername/health-claims-etl" target="_blank">View on GitHub</a>
     </div>
-  </section>
+    <div class="col-md-6 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">US Healthcare Insurance Data QA</h5>
+          <ul>
+            <li>Validation of healthcare insurance data pipelines through SQL-based checks during Oracle → Teradata migration</li>
+            <li>Gaining deep domain insight into US healthcare payer–provider relationships, indoor - outdoor patient segregation and claims transformation logic</li>
+            <li>Proposal and implementation of workflow improvements, leading to 18% increase in QA cycle efficiency</li>
+          </ul>
+          </div>
+      </div>
+    </div>
+	<div class="col-md-6 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">ERP-Supply Chain Logistics</h5>
+          <ul>
+            <li>Design and execution of manual test cases for ERP supply chain workflows using Microsoft Dynamics AX and Oracle</li>
+            <li>Collaboration with UI teams to perform web-based interface validations using basic Cypress</li>
+            <li>Bugs and inconsistencies documentation using Jira/Xray in both English and German enabling risk identification and streamlining QA priorities</li>
+          </ul>
+         </div>
+      </div>
+    </div>
+	<div class="col-md-6 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Marriage Data Storage & Reporting: Personal Project (WIP)</h5>
+          <ul>
+            <li>Creation of Relational Database on MS SQL Platform</li>
+            <li>Storing and transforming to reflect required data </li>
+            <li>Scheduling data loads using Python scripting - WIP</li>
+          </ul>
+          <a href="https://github.com/subhadeeps91/MarriageData" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<section>
-    <h2>Education</h2>
+<!-- Education -->
+<section id="Education">
+    <h2 class="Education">Education</h2>
     <ul>
       <li>Masters in Management (Mar-2021 - Jun 2023): University of Europe for Applied Sciences, Berlin; Final Grade: 89.91%</li>
       <li>BTech in Instrumentation & Control Engineering (Jul-2010 - Jun-2014): West bengal University of Technology; Final Grade: 7.17</li>
     </ul>
   </section>
-
-  <section>
-    <h2>Awards & Certifications</h2>
+  
+<!-- Awards & Certificates -->
+<section id="Awards & Certificates">
+    <h2 class="Awards & Certificates">Awards & Certificates</h2>
     <ul>
       <li>ISTQB® Certified Tester - Foundation Level 4.0</li>
       <li>Accenture Centre of Excellence - ACE Award(2019)</li>
     </ul>
   </section>
+  
 
-  <section>
-    <h2>Tools & Skills</h2>
-    <ul>
-      <li>Tech Stack: SQL, Python, Power BI, Informatica, Jenkins</li>
+    <!-- Tools & Skills -->
+    <section id="skills">
+      <h2 class="section-title">Tools & Skills</h2>
+      <ul>
+        <li>Tech Stack: SQL, Python, Power BI, Informatica, Jenkins</li>
       <li>Process: ETL Testing, Data Warehousing, Manual Testing, Automation</li>
 	  <li>Tools: Fitnesse, Postman, Cypress (basic),Git, JIRA, HP-ALM, Confluence</li>
       <li>Methods: Agile Methodologies (Scrum, KANBAN), Waterfall, Stakeholder communication</li>
-    </ul>
-  </section>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Voluntary Work</h2>
-    <p>Ignite e.V., Berlin: Event Manager & Community coordinator (2022 - Till Date) - Organization and moderation of over 10 major events for the Indian community in Berlin. Social media strategies through Data Analysis to increase reach. Creation of promotional materials using(Canva, videos), and establishment and coordination of a team of volunteers to ensure successful event execution.</p>
+    <!-- Voluntary Work -->
+    <section>
+      <h2 class="section-title">Voluntary Work</h2>
+      <p>Ignite e.V., Berlin: Event Manager & Community coordinator (2022 - Till Date) - Organization and moderation of over 10 major events for the Indian community in Berlin. Social media strategies through Data Analysis to increase reach. Creation of promotional materials using(Canva, videos), and establishment and coordination of a team of volunteers to ensure successful event execution.</p>
 	<p>Special Olympics National Games, Berlin : Transport coordination  (Jun - 2022) - Organization of transport for athletes between competition venues under high responsibility</p>
 	<p>SCC Events GmbH – Berlin Marathon: Track marshals & event logistics (Sept 2022) - Responsibility for route security and coordination of the area at the 13-14km mark point at the Berlin Marathon.</p>
-  </section>
+    </section>
 
-  <section>
-    <h2>Hobbies & Interests</h2>
-    <ul>
-      <li>Football & Sports Analysis, Badminton, Swimming, Cricket</li>
-      <li>Data Visualization & Analysis</li>
-      <li>Travel and Hiking, Wildlife Photography, Painting</li>
-    </ul>
-  </section>
+    <!-- Hobbies -->
+    <section>
+      <h2 class="section-title">Hobbies</h2>
+      <ul>
+        <li>Football & Sports Analysis</li>
+        <li>Data Visualization with Python</li>
+        <li>Travel and Cultural Blogging</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: subhadeeps91@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/subhadeep-sarkar-514a51a7" target="_blank">subhadeep-sarkar-514a51a7</a></p>
-    <p>GitHub: <a href="https://github.com/subhadeeps91" target="_blank">subhadeeps91</a></p>
-  </section>
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p><strong>Email:</strong> subhadeeps91@gmail.com</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/subhadeep-sarkar-514a51a7" target="_blank">subhadeep-sarkar-514a51a7</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/subhadeeps91" target="_blank">subhadeeps91</a></p>
+    </section>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
