@@ -1,0 +1,24 @@
+{
+  "name": "subhadeeps91.github.io.git",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subhadeeps91/subhadeeps91.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subhadeeps91/subhadeeps91.github.io/issues"
+  },
+  "homepage": "https://github.com/subhadeeps91/subhadeeps91.github.io#readme",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^14.5.2",
+    "mochawesome": "^7.1.3"
+  }
+}
