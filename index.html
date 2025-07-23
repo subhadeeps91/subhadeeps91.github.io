@@ -66,17 +66,26 @@
   <!-- Cover Image -->
   <img src="cover.jpg" alt="Cover Image" class="img-fluid w-100 h-100" style="object-fit: cover;">
 
-  <!-- Overlay for Profile & Intro -->
-  <div class="position-absolute top-50 start-4 translate-middle-y d-flex align-items-center px-8" style="width: 100%;">
-    <div class="profile-pic me-4">
-      <img src="profile.jpg" alt="Profile Picture" style="width: 190px; height: 200px; object-fit: cover; border: 3px solid white; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-    </div>
-    <div class="text-white">
-      <h1 class="fw-bold">Subhadeep Sarkar</h1>
-      <p class="lead">Data Test Engineer | Test Analyst | QA Analyst | Softwaretester | ISTQB Certified | SQL | Python | API/ Postman | Manual & Automation | JIRA, Jenkins, Bitbucket</p>
+  <!-- Overlay Layer -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+               background: rgba(0,0,0,0.5); z-index: 1;"></div>
+
+  <!-- Text and Profile Photo -->
+  <div class="position-absolute top-50 start-50 translate-middle text-white text-center text-md-start px-3 d-flex flex-column flex-md-row align-items-center" style="z-index: 2;">
+    <img src="profile.jpg" alt="Profile Picture"
+         style="width: 190px; height: 200px; object-fit: cover;
+                border: 3px solid white; border-radius: 50%;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2); margin-bottom: 1rem; margin-right: 1rem;">
+    <div>
+      <h1 class="fw-bold display-5 display-md-3">Subhadeep Sarkar</h1>
+      <p class="lead fs-6 fs-md-5">
+        Data Test Engineer | Test Analyst | QA Analyst | ISTQB Certified | SQL | Python |
+        API/ Postman | Manual & Automation | JIRA, Jenkins, Bitbucket
+      </p>
     </div>
   </div>
 </header>
+
 
   <main class="container py-4">
     <!-- Experience -->
