@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4CDWM61WMZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4CDWM61WMZ');
+</script>
+  <!-- End Google Tag Manager -->
+
+  <style>
+    body {
+      background-color: #eef2f5;
+      font-family: Arial, sans-serif;
+    }
+    .profile-pic {
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+      margin-top: 15px;
+    }
+    .section-title {
+      color: #004080;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WN2XQZBH"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+		  <li class="nav-item"><a class="nav-link" href="#experience">Education</a></li>
+		  <li class="nav-item"><a class="nav-link" href="#experience">Awards & Certificates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section with Profile -->
+<header class="container-fluid position-relative p-0" style="height: 320px;">
+  <!-- Cover Image -->
+  <img src="cover.jpg" alt="Cover Image" class="img-fluid w-100 h-100" style="object-fit: cover;">
+
+  <!-- Overlay Layer -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+               background: rgba(0,0,0,0.5); z-index: 1;"></div>
+
+  <!-- Text and Profile Photo -->
+  <div class="position-absolute top-50 start-50 translate-middle text-white text-center text-md-start px-3 d-flex flex-column flex-md-row align-items-center" style="z-index: 2;">
+    <img src="profile.jpg" alt="Profile Picture"
+         style="width: 190px; height: 200px; object-fit: cover;
+                border: 3px solid white; border-radius: 50%;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2); margin-bottom: 1rem; margin-right: 1rem;">
+    <div>
+      <h1 class="fw-bold display-5 display-md-3">Subhadeep Sarkar</h1>
+      <p class="lead fs-6 fs-md-5">
+        Data Test Engineer | Test Analyst | QA Analyst | ISTQB Certified | SQL | Python |
+        API/ Postman | Manual & Automation | JIRA, Jenkins, Bitbucket
+      </p>
+    </div>
+  </div>
+</header>
+
+
+  <main class="container py-4">
+    <!-- Experience -->
+    <section id="experience">
+  <h2 class="section-title">Work Experience</h2>
+  <img src="Images/Work Experience.jpg" alt="Work Experience" class="img-fluid mb-3" style="max-height: 120px;">
+  <ul>
+    <li><strong>New Yorker - Braunschweig, Germany</strong> – Test Engineer (Nov-2024–Mar-2025)</li>
+    <li><strong>Accenture - Pune, India</strong> – Senior Analyst (Jan-2018–Mar-2021)</li>
+    <li><strong>Accenture - Chennai, India</strong> – Analyst (Oct-2014–Jan-2018)</li>
+  </ul>
+</section>
+
+    <!-- Projects -->
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <img src="Images/Project.jpg" alt="Projects" class="img-fluid mb-3" style="max-height: 120px;">
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">UK Banking QA & Automation</h5>
+          <ul>
+            <li>Automation using Python Based SQL regression test suites for regulatory banking pipelines integrated in CI/CD pipeline</li>
+            <li>Planning and execution of manual test cases based on detailed functional specs across FATCA, Default Calculation Logic(DCE), and liquidity logic</li>
+            <li>Improve release quality by reducing defect rate by 25% and test duration by 30%. Supporting QA culture growth through report generation using Power BI, peer reviews and knowledge sharing</li>
+          </ul>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">US Healthcare Insurance Data QA</h5>
+          <ul>
+            <li>Validation of healthcare insurance data pipelines through SQL-based checks during Oracle → Teradata migration</li>
+            <li>Gaining deep domain insight into US healthcare payer–provider relationships, indoor - outdoor patient segregation and claims transformation logic</li>
+            <li>Proposal and implementation of workflow improvements, leading to 18% increase in QA cycle efficiency</li>
+          </ul>
+          </div>
+      </div>
+    </div>
+	<div class="col-md-6 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">ERP-Supply Chain Logistics</h5>
+          <ul>
+            <li>Design and execution of manual test cases for ERP supply chain workflows using Microsoft Dynamics AX and Oracle</li>
+            <li>Collaboration with UI teams to perform web-based interface validations using basic Cypress</li>
+            <li>Bugs and inconsistencies documentation using Jira/Xray in both English and German enabling risk identification and streamlining QA priorities</li>
+          </ul>
+         </div>
+      </div>
+    </div>
+	<div class="col-md-6 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Marriage Data Storage & Reporting: Personal Project (WIP)</h5>
+          <ul>
+            <li>Creation of Relational Database on MS SQL Platform</li>
+            <li>Storing and transforming to reflect required data </li>
+            <li>Scheduling data loads using Python scripting - WIP</li>
+          </ul>
+          <a href="https://github.com/subhadeeps91/MarriageData" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Education">
+  <h2 class="Education">Education</h2>
+  <img src="Images/education.jpg" alt="Education" class="img-fluid mb-3" style="max-height: 120px;">
+  <ul>
+    <li>
+      Masters in Management (Mar-2021 – Jun 2023):
+      <a href="https://github.com/subhadeeps91/subhadeeps91.github.io/blob/main/Certificates/Universit%C3%A4t%20DegreeMasters%26_Bachelors.pdf" target="_blank">🎓 Diploma</a> | 
+      <a href="https://github.com/subhadeeps91/subhadeeps91.github.io/blob/main/Certificates/Transcript%20Masters.pdf" target="_blank">📄 Transcript</a>
+      — University of Europe for Applied Sciences, Berlin; Final Grade: 89.91%
+    </li>
+    <li>
+      BTech in Instrumentation & Control Engineering (Jul-2010 – Jun-2014):
+      <a href="https://github.com/subhadeeps91/subhadeeps91.github.io/blob/main/Certificates/Universit%C3%A4t%20DegreeMasters%26_Bachelors.pdf" target="_blank">🎓 Diploma</a> | 
+      <a href="https://github.com/subhadeeps91/subhadeeps91.github.io/blob/main/Certificates/transcript_Bachelors.pdf" target="_blank">📄 Transcript</a>
+      — West Bengal University of Technology; Final Grade: 7.17
+    </li>
+  </ul>
+</section>
+
+
+<!-- Awards & Certificates -->
+<section id="Awards & Certificates">
+    <h2 class="Awards & Certificates">Awards & Certificates</h2>
+    <img src="Images/awards.jpg" alt="Awards & Certificates" class="img-fluid mb-3" style="max-height: 120px;">
+    <ul>
+    <li>
+      <a href="https://github.com/subhadeeps91/subhadeeps91.github.io/blob/main/Certificates/ISTQB_F4_Certificate.pdf" target="_blank">
+        ISTQB® Certified Tester - Foundation Level 4.0 📄
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/subhadeeps91/subhadeeps91.github.io/blob/main/Certificates/micro1_Test%20Engineer_Certificate.jpg" target="_blank">
+        micro1 Test Engineer Certificate 📄
+      </a>
+    </li>
+    <li>
+      Accenture Centre of Excellence - ACE Award (2019) 🏆
+    </li>
+  </ul>
+</section>
+
+  
+
+    <!-- Tools & Skills with Icons -->
+<section id="skills">
+  <h2 class="section-title">Tools & Skills</h2>
+  <img src="Images/Skills.jpg" alt="Tools & Skills" class="img-fluid mb-3" style="max-height: 120px;">
+
+  <div class="border p-3 mb-4 bg-light rounded">
+    <h5><img src="Images/Tech Stack.jpg" alt="Tech Stack" width="24" height="24" class="me-2"> Tech Stack</h5>
+    <div class="d-flex flex-wrap align-items-center text-center">
+      <div class="me-4 mb-3">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="40" height="40">
+        <div>Python</div>
+      </div>
+      <div class="me-4 mb-3">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" width="40" height="40">
+        <div>SQL</div>
+      </div>
+      <div class="me-4 mb-3">
+        <img src="Images/Power BI.jpg" alt="Power BI" width="40" height="40">
+        <div>Power BI</div>
+      </div>
+      <div class="me-4 mb-3">
+        <img src="Images/Informatica.jpg" alt="Informatica" width="40" height="40">
+        <div>Informatica</div>
+      </div>
+      <div class="me-4 mb-3">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" width="40" height="40">
+        <div>Jenkins</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="border p-3 mb-4 bg-light rounded">
+    <h5><img src="Images/Tools.jpg" alt="Tools" width="24" height="24" class="me-2"> Tools</h5>
+    <div class="d-flex flex-wrap align-items-center text-center">
+      <div class="me-4 mb-3">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="40" height="40">
+        <div>Git</div>
+      </div>
+      <div class="me-4 mb-3">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="JIRA" width="40" height="40">
+        <div>JIRA</div>
+      </div>
+      <div class="me-4 mb-3">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg" alt="Postman" width="40" height="40">
+        <div>Postman</div>
+      </div>
+      <div class="me-4 mb-3">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cypressio/cypressio-original.svg" alt="Cypress" width="40" height="40">
+        <div>Cypress</div>
+      </div>
+      <div class="me-4 mb-3">
+        <img src="Images/fitnesse.jpg" alt="Fitnesse" width="40" height="40">
+        <div>Fitnesse</div>
+      </div>
+      <div class="me-4 mb-3">
+        <img src="Images/HP-ALM.jpg" alt="HP-ALM" width="40" height="40">
+        <div>HP-ALM</div>
+      </div>
+      <div class="me-4 mb-3">
+        <img src="Images/Confluence.jpg" alt="Confluence" width="40" height="40">
+        <div>Confluence</div>
+     </div>
+  </div>
+
+  <div class="border p-3 mb-4 bg-light rounded">
+    <h5><img src="Images/Process.jpg" alt="Process" width="24" height="24" class="me-2"> Process</h5>
+    <ul class="mb-0">
+      <li>ETL Testing</li>
+      <li>Data Warehousing</li>
+      <li>Manual Testing</li>
+      <li>Automation</li>
+    </ul>
+  </div>
+
+  <div class="border p-3 mb-4 bg-light rounded">
+    <h5><img src="Images/Methods.jpg" alt="Methods" width="24" height="24" class="me-2"> Methods</h5>
+    <ul class="mb-0">
+      <li>Agile Methodologies (Scrum, KANBAN)</li>
+      <li>Waterfall</li>
+      <li>Stakeholder communication</li>
+    </ul>
+  </div>
+</section>
+
+    <!-- Voluntary Work -->
+    <section>
+      <h2 class="section-title">Voluntary Work</h2>
+	  <img src="Images/voluntary work.jpg" alt="Work Experience" class="img-fluid mb-3" style="max-height: 120px;">
+      <p>* Ignite e.V., Berlin: Event Manager & Community coordinator (2022 - Till Date) - Organization and moderation of over 10 major events for the Indian community in Berlin. Social media strategies through Data Analysis to increase reach. Creation of promotional materials using(Canva, videos), and establishment and coordination of a team of volunteers to ensure successful event execution.</p>
+	<p>* Special Olympics National Games, Berlin : Transport coordination  (Jun - 2022) - Organization of transport for athletes between competition venues under high responsibility</p>
+	<p>* SCC Events GmbH – Berlin Marathon: Track marshals & event logistics (Sept 2022) - Responsibility for route security and coordination of the area at the 13-14km mark point at the Berlin Marathon.</p>
+    </section>
+
+    <!-- Hobbies -->
+    <section>
+      <h2 class="section-title">Hobbies</h2>
+	  <img src="Images/hobbies.jpg" alt="Hobbies" class="img-fluid mb-3" style="max-height: 120px;">
+      <ul>
+        <li>Football, Badminton, Swimming, Cricket & Sports Analysis</li>
+        <li>Travel & Wildlife Photography</li>
+        <li>Painting & Pneumismatics</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+	  <img src="Images/contact.jpg" alt="Contact" class="img-fluid mb-3" style="max-height: 120px;">
+      <p><strong>Email:</strong> subhadeeps91@gmail.com</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/subhadeep-sarkar-514a51a7" target="_blank">subhadeep-sarkar-514a51a7</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/subhadeeps91" target="_blank">subhadeeps91</a></p>
+	  <p><strong>XING:</strong> <a href="https://www.xing.com/profile/Subhadeep_Sarkar044002/web_profiles" target="_blank">subhadeeps91</a></p>
+    </section>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
