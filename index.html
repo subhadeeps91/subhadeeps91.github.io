@@ -288,16 +288,52 @@
       <p>* SCC Events GmbH – Berlin Marathon: Track marshals & event logistics (Sept 2022) - Responsibility for route security and coordination of the area at the 13-14km mark point at the Berlin Marathon.</p>
     </section>
 
-    <!-- Hobbies -->
-    <section id="hobbies">
-      <h2 class="section-title">Hobbies</h2>
-      <img src="Images/hobbies.jpg" alt="Hobbies icon" class="img-fluid mb-3" style="max-height: 120px;" />
-      <ul>
-        <li>Football, Badminton, Swimming, Cricket & Sports Analysis</li>
-        <li>Travel & Wildlife Photography</li>
-        <li>Painting & Pneumismatics</li>
-      </ul>
-    </section>
+    <!-- Add Lightbox2 CSS in your <head> -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+<!-- Hobbies Section -->
+<section id="hobbies" class="py-5">
+  <h2 class="section-title text-center mb-4">Hobbies</h2>
+  <img src="Images/hobbies.jpg" alt="Hobbies icon" class="img-fluid d-block mx-auto mb-3" style="max-height: 120px;" />
+
+  <div class="row justify-content-center">
+    <!-- cricket & Sports -->
+    <div class="col-md-4 text-center mb-4">
+      <a href="Hobbies/cricket.jpg" data-lightbox="cricket" data-title="cricket & Sports">
+        <img src="Hobbies/cricket.jpg" alt="cricket" class="img-fluid rounded shadow-sm" style="max-height: 150px;" />
+      </a>
+      <p class="mt-2">cricket & Sports</p>
+    </div>
+
+    <!-- Photography Gallery -->
+    <div class="col-md-4 text-center mb-4">
+      <!-- Main Thumbnail -->
+      <a href="Hobbies/photography1.jpg" data-lightbox="photography" data-title="Travel & Wildlife Photography">
+        <img src="Hobbies/photography1.jpg" alt="Photography" class="img-fluid rounded shadow-sm" style="max-height: 150px;" />
+      </a>
+      <!-- Hidden Images in Same Gallery -->
+      <a href="Hobbies/photography2.jpg" data-lightbox="photography" data-title="Wildlife Shot 2"></a>
+      <a href="Hobbies/photography3.jpg" data-lightbox="photography" data-title="Travel Moment"></a>
+      <p class="mt-2">Travel & Wildlife Photography</p>
+    </div>
+
+    <!-- Painting Gallery -->
+    <div class="col-md-4 text-center mb-4">
+      <!-- Main Thumbnail -->
+      <a href="Hobbies/painting1.jpg" data-lightbox="painting" data-title="Painting & Coin Collection">
+        <img src="Hobbies/painting1.jpg" alt="Painting" class="img-fluid rounded shadow-sm" style="max-height: 150px;" />
+      </a>
+      <!-- Hidden Images in Same Gallery -->
+      <a href="Hobbies/painting2.jpg" data-lightbox="painting" data-title="oil Painting"></a>
+      <p class="mt-2">Painting & Coin Collection</p>
+    </div>
+  </div>
+</section>
+
+<!-- Add Lightbox2 JS before </body> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
 
     <!-- Contact -->
     <section id="contact">
