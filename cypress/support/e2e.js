@@ -13,12 +13,14 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 
-// Import commands.js using ES2015 syntax:
-import './commands'
-
-// Ignore specific cross‑origin script errors so they don't fail tests
+// Ignore generic cross-origin "Script error" (e.g., from Google Analytics)
 Cypress.on('uncaught:exception', (err) => {
   if (err.message.includes('Script error')) {
     return false; // prevents Cypress from failing the test
   }
 });
+
+
+// Import commands.js using ES2015 syntax:
+import './commands'
+
