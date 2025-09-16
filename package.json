@@ -18,7 +18,7 @@
   "homepage": "https://github.com/subhadeeps91/subhadeeps91.github.io#readme",
   "description": "",
   "devDependencies": {
-    "cypress": "^14.5.2",
+    "cypress": "^15.2.0",
     "mochawesome": "^7.1.3"
   }
 }
