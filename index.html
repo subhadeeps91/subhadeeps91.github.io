@@ -280,56 +280,75 @@
       </div>
     </section>
 
-    <!-- Voluntary Work -->
-    <section id="voluntary">
-      <h2 class="section-title">Voluntary Work</h2>
-      <img src="Images/voluntary work.jpg" alt="Voluntary work icon" class="img-fluid mb-3" style="max-height: 120px;" />
-      <p>* Ignite e.V., Berlin: Event Manager & Community coordinator (2022 - Till Date) - Organization and moderation of over 10 major events for the Indian community in Berlin. Social media strategies through Data Analysis to increase reach. Creation of promotional materials using (Canva, videos), and establishment and coordination of a team of volunteers to ensure successful event execution.</p>
-      <p>* Special Olympics National Games, Berlin: Transport coordination (Jun - 2022) - Organization of transport for athletes between competition venues under high responsibility.</p>
-      <p>* SCC Events GmbH – Berlin Marathon: Track marshals & event logistics (Sept 2022) - Responsibility for route security and coordination of the area at the 13-14km mark point at the Berlin Marathon.</p>
-    </section>
+    <!-- ===== Voluntary Work Section ===== -->
+<section id="voluntary" class="py-5">
+  <h2 class="section-title mb-4 text-start">Voluntary Work</h2>
+  <img src="Images/voluntary work.jpg" alt="Voluntary work icon"
+       class="img-fluid mb-3"
+       style="max-height: 120px;" />
 
-    <!-- Add Lightbox2 CSS in your <head> -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <div class="white-box">
+    <p><strong>Ignite e.V., Berlin:</strong> Event Manager & Community coordinator (2022 – Till Date) – Organization and moderation of over 10 major events for the Indian community in Berlin. Social media strategies through Data Analysis to increase reach. Creation of promotional materials (Canva, videos), and coordination of a team of volunteers to ensure smooth execution.</p>
 
-<!-- Hobbies Section -->
+    <p><strong>Special Olympics National Games, Berlin:</strong> Transport coordination (Jun 2022) – Organization of transport for athletes between competition venues while ensuring smooth execution.</p>
+
+    <p><strong>SCC Events GmbH – Berlin Marathon:</strong> Track marshals & event logistics (Sept 2022) – Responsibility for route security and coordination of the area at the 13–14 km mark point of the marathon route.</p>
+  </div>
+</section>
+
+<!-- ===== Hobbies Section ===== -->
 <section id="hobbies" class="py-5">
-  <h2 class="section-title mb-4">Hobbies</h2>
-  <img src="Images/hobbies.jpg" alt="Hobbies icon" class="img-fluid mb-3" style="max-height: 120px;" />
+  <h2 class="section-title mb-4 text-start">Hobbies</h2>
+  <img src="Images/hobbies.jpg" alt="Hobbies icon"
+       class="img-fluid mb-4"
+       style="max-height: 120px;" />
 
-  <div class="row justify-content-center">
-    <!-- cricket & Sports -->
-    <div class="col-md-4 text-center mb-4">
-      <a href="Hobbies/cricket.jpg" data-lightbox="cricket" data-title="cricket & Sports">
-        <img src="Hobbies/cricket.jpg" alt="cricket" class="img-fluid rounded shadow-sm" style="max-height: 150px;" />
-      </a>
-      <p class="mt-2">cricket & Sports</p>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="white-box text-center">
+        <a href="Hobbies/cricket.jpg" data-lightbox="hobbies" data-title="Cricket & Sports">
+          <img src="Hobbies/cricket.jpg" alt="Cricket"
+               class="img-fluid rounded"
+               style="max-height: 150px;" />
+        </a>
+        <p class="mt-2 mb-0">Cricket & Sports</p>
+      </div>
     </div>
 
-    <!-- Photography Gallery -->
-    <div class="col-md-4 text-center mb-4">
-      <!-- Main Thumbnail -->
-      <a href="Hobbies/photography1.jpg" data-lightbox="photography" data-title="Travel & Wildlife Photography">
-        <img src="Hobbies/photography1.jpg" alt="Photography" class="img-fluid rounded shadow-sm" style="max-height: 150px;" />
-      </a>
-      <!-- Hidden Images in Same Gallery -->
-      <a href="Hobbies/photography2.jpg" data-lightbox="photography" data-title="Wildlife Shot 2"></a>
-      <a href="Hobbies/photography3.jpg" data-lightbox="photography" data-title="Travel Moment"></a>
-      <p class="mt-2">Travel & Wildlife Photography</p>
+    <div class="col-md-4 mb-4">
+      <div class="white-box text-center">
+        <a href="Hobbies/travel.jpg" data-lightbox="hobbies" data-title="Travel">
+          <img src="Hobbies/travel.jpg" alt="Travel"
+               class="img-fluid rounded"
+               style="max-height: 150px;" />
+        </a>
+        <p class="mt-2 mb-0">Travel</p>
+      </div>
     </div>
 
-    <!-- Painting Gallery -->
-    <div class="col-md-4 text-center mb-4">
-      <!-- Main Thumbnail -->
-      <a href="Hobbies/painting1.jpg" data-lightbox="painting" data-title="Painting & Coin Collection">
-        <img src="Hobbies/painting1.jpg" alt="Painting" class="img-fluid rounded shadow-sm" style="max-height: 150px;" />
-      </a>
-      <!-- Hidden Images in Same Gallery -->
-      <a href="Hobbies/painting2.jpg" data-lightbox="painting" data-title="oil Painting"></a>
-      <p class="mt-2">Painting & Coin Collection</p>
+    <div class="col-md-4 mb-4">
+      <div class="white-box text-center">
+        <a href="Hobbies/photography.jpg" data-lightbox="hobbies" data-title="Photography">
+          <img src="Hobbies/photography.jpg" alt="Photography"
+               class="img-fluid rounded"
+               style="max-height: 150px;" />
+        </a>
+        <p class="mt-2 mb-0">Photography</p>
+      </div>
     </div>
   </div>
 </section>
+
+<!-- ===== CSS for White Box Styling ===== -->
+<style>
+  .white-box {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+</style>
+
 
 <!-- Add Lightbox2 JS before </body> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
