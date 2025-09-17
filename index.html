@@ -51,6 +51,24 @@
       width: 60px;
       height: 60px;
     }
+	
+	<!-- New addition 18.09 -->
+	/* Uniform vertical spacing for all sections */
+section {
+  margin-bottom: 2rem; /* same gap below each section */
+}
+
+/* Optional: tighten heading spacing */
+.section-title {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Remove extra bottom margin from last element in section */
+section > *:last-child {
+  margin-bottom: 0;
+}
+
   </style>
 </head>
 <body>
