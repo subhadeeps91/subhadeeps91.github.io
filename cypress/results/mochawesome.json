@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-09-18T15:00:28.195Z",
+    "end": "2025-09-18T15:00:35.253Z",
+    "duration": 7058,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c685a039-81c9-4652-b0c1-35b0de933be1",
+      "title": "",
+      "fullFile": "cypress\\e2e\\portfolio.cy.js",
+      "file": "cypress\\e2e\\portfolio.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3de888a9-5a97-4521-9a8e-02c157da4837",
+          "title": "Subhadeep Portfolio Site",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display the portfolio title, site label, and name",
+              "fullTitle": "Subhadeep Portfolio Site should display the portfolio title, site label, and name",
+              "timedOut": null,
+              "duration": 4035,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Check the <title> tag in the browser tab\ncy.title().should('include', 'Subhadeep Sarkar');\n// Check the visible \"My Portfolio\" label in the header/nav\ncy.contains('My Portfolio').should('be.visible');\n// Check your name is visible somewhere on the page\ncy.contains('Subhadeep Sarkar').should('be.visible');",
+              "err": {},
+              "uuid": "5689341d-4dbc-4c58-b7e5-aa4e6409c091",
+              "parentUUID": "3de888a9-5a97-4521-9a8e-02c157da4837",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should render major portfolio sections",
+              "fullTitle": "Subhadeep Portfolio Site should render major portfolio sections",
+              "timedOut": null,
+              "duration": 237,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "['Work Experience', 'Projects', 'Education', 'Tools & Skills', 'Contact'].forEach(sectionTitle => {\n  cy.contains('h2', sectionTitle).should('be.visible');\n});",
+              "err": {},
+              "uuid": "655b0407-433e-4616-be56-0e01efe6aa4c",
+              "parentUUID": "3de888a9-5a97-4521-9a8e-02c157da4837",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display profile and cover images",
+              "fullTitle": "Subhadeep Portfolio Site should display profile and cover images",
+              "timedOut": null,
+              "duration": 218,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('header img[alt=\"Cover image\"]').should('be.visible');\ncy.get('header img[alt=\"Profile picture\"]').should('be.visible');",
+              "err": {},
+              "uuid": "ad2d3a6e-02b8-4bfd-aefb-e5cd8fe19efc",
+              "parentUUID": "3de888a9-5a97-4521-9a8e-02c157da4837",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should validate contact links",
+              "fullTitle": "Subhadeep Portfolio Site should validate contact links",
+              "timedOut": null,
+              "duration": 219,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a[href*=\"linkedin\"]').should('have.attr', 'target', '_blank');\ncy.get('a[href*=\"github\"]').should('exist');",
+              "err": {},
+              "uuid": "e279068a-534b-445d-9ffe-f0969cd96ef2",
+              "parentUUID": "3de888a9-5a97-4521-9a8e-02c157da4837",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5689341d-4dbc-4c58-b7e5-aa4e6409c091",
+            "655b0407-433e-4616-be56-0e01efe6aa4c",
+            "ad2d3a6e-02b8-4bfd-aefb-e5cd8fe19efc",
+            "e279068a-534b-445d-9ffe-f0969cd96ef2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4709,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.0"
+    }
+  }
+}
